@@ -12,7 +12,7 @@ function Header () {
         <Container fluid>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="ms-auto">
-            <Link to="home" className='text-decoration-none ms-3'>Home</Link>
+            <Link to="/" className='text-decoration-none ms-3'>Home</Link>
             <Link to="team" className='text-decoration-none ms-3'>Team</Link>
             <Link to="contact" className='text-decoration-none ms-3'>Contact Us</Link>
             <Link to="login" className='text-decoration-none ms-3'>Login</Link>

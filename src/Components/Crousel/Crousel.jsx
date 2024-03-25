@@ -1,49 +1,41 @@
 import React from 'react';
-
+import Banner from '../../assets/Images/download.jpg';
+import Banner1 from '../../assets/Images/download2.jpg';
+import Banner2 from '../../assets/Images/download3.jpg';
 import Carousel from 'react-bootstrap/Carousel';
+import { Image } from 'react-bootstrap';
+import '../Crousel/Crousel.scss'
 
 function Crousel() {
   return (
-    <>
-        <div className='crouselWrapper'>
-        <Carousel data-bs-theme="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=f5f5f5"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-        </div>
+    <>         <Carousel className="custom-crousel">
+            <Carousel.Item>
+              <Carousel.Caption>
+                <Image src={Banner} className="img-fluid"/>
+                <div className="content">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption>
+                <Image src={Banner1} className="img-fluid"/>
+                <div className="content">
+                  <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Carousel.Caption>
+              <Image src={Banner2} className="img-fluid"/>
+              <div className="content"><h3>Third slide label</h3>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                </p></div>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
     </>
     
   );

@@ -10,20 +10,24 @@ import Login from './Pages/Login/Login';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <div className="mainWrapper mt-56">        
+    <div className='appWrapper'>
+      <Router>
+        <Header />
+      <div className="mainWrapper mt-55">        
         {/* Use 'Route' instead of 'Routes' */}
         <Routes>
           {/*******Define routes using the 'Route' component *******/}
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path='/contact' element={<Contact />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-      </div>
-      <Footer />
+      </div>      
     </Router>
+    <Footer />
+    </div>
+
+
   );
 }
 

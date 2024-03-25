@@ -5,10 +5,10 @@ import Crousel from "../Crousel/Crousel";
 function Home () {
     return (
         <>
-            <div className="homeWrapper">
+           <div className="homeCrousel">
                 <Crousel />
-            <h3>Home</h3>
             </div>
+            
         </>
     );
 }
