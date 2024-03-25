@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Changed from 'Link' to 'Route'
 import Team from './Components/Team/Team';
 import Contact from './Components/Contact/Contact';
+import Login from './Pages/Login/Login';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path='/contact' element={<Contact />} />
-          {/* <Route path="/footer" element={<Footer />} /> */}
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
       <Footer />
