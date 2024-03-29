@@ -17,11 +17,7 @@ function Footer () {
   const hours = currentDate.getHours();
     const minutes = currentDate.getMinutes();
     const seconds = currentDate.getSeconds();
-
-    console.log('Hours:' , hours);
-    console.log('Minutes:' , minutes);
-    console.log('Seconds:' , seconds);
-  
+ 
   return (
         <>
         <div className='footerWrapper'>

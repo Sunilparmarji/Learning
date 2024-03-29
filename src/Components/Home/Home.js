@@ -1,12 +1,14 @@
 import React from "react";
 import './Home.scss';
+import Crousel from "../Crousel/Crousel";
 
 function Home () {
     return (
         <>
-            <div className="homeWrapper">
-            <h3>Home</h3>
+           <div className="homeCrousel">
+                <Crousel />
             </div>
+            
         </>
     );
 }
